@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Mapa de Rutas en Bici</title>
+    <script src="https://unpkg.com/cytoscape@3.21.1/dist/cytoscape.min.js"></script>
+    <style>
+        #cy {
+            width: 100vw;
+            height: 100vh;
+            background: #fafafa;
+        }
+    </style>
+</head>
+<body>
+
+<div id="cy"></div>
+
+<script>
+fetch('graph.json') // cargamos el archivo externo
+    .then(response => response.json())
+    .then(elements => {
+        const cy = cytoscape({
+            container: document.getElementById('cy'),
+            elements: elements,
+            style: [
+                {
+                    selector: 'node',
+                    style: {
+                        'background-color': '#0074D9',
+                        'label': 'data(id)',
+                        'color': '#fff',
+                        'text-valign': 'center',
+                        'text-halign': 'center',
+                        'font-size': '10px'
+                    }
+                },
+                {
+                    selector: 'edge',
+                    style: {
+                        'curve-style': 'bezier', // Para que las aristas se curven y no se superpongan
+                        'control-point-distance': 30, // separa las curvas de ida y vuelta
+                        'control-point-weight': 0.5,
+                        'label': 'data(label)',
+                        'font-size': '8px',
+                        'width': 2,
+                        'line-color': '#aaa',
+                        'target-arrow-color': '#aaa',
+                        'target-arrow-shape': 'triangle', // 🔥 aquí hacemos que sea dirigido
+                        'arrow-scale': 1.5
+                    }
+                }
+            ],
+            layout: {
+                name: 'cose', // algoritmo automático para distribuir bonito
+                animate: true
+            }
+        });
+    })
+    .catch(error => console.error('Error cargando el archivo JSON:', error));
+</script>
+
+</body>
+</html>

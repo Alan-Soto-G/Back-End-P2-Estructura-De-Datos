@@ -1,0 +1,64 @@
+{
+    "users": {
+        "0": {
+            "points": [
+                {
+                    "id": 0,
+                    "name": "Parque Central",
+                    "description": "Zona verde y segura",
+                    "risk_level": 1
+                },
+                {
+                    "id": 1,
+                    "name": "Avenida Principal",
+                    "description": "Mucho tráfico de carros",
+                    "risk_level": 5
+                }
+            ],
+            "edges": [
+                {
+                    "from": "p1",
+                    "to": "p2",
+                    "distance_meters": 400,
+                    "directed": true
+                }
+            ]
+        },
+        "1": {
+            "points": [
+                {
+                    "id": "p3",
+                    "name": "Plaza Mayor",
+                    "description": "Centro de eventos",
+                    "risk_level": 2
+                },
+                {
+                    "id": "p4",
+                    "name": "Callejón Oscuro",
+                    "description": "Zona peligrosa de noche",
+                    "risk_level": 4
+                },
+                {
+                    "id": "p5",
+                    "name": "Mirador del Sol",
+                    "description": "Vista panorámica",
+                    "risk_level": 1
+                }
+            ],
+            "edges": [
+                {
+                    "from": "p3",
+                    "to": "p4",
+                    "distance_meters": 250,
+                    "directed": true
+                },
+                {
+                    "from": "p4",
+                    "to": "p5",
+                    "distance_meters": 600,
+                    "directed": true
+                }
+            ]
+        }
+    }
+}
