@@ -51,6 +51,7 @@ class Graph:
         self.graph[node1][node2] = weight
         if not directed:
             self.graph[node2][node1] = weight
+        
 
     def dfs_all_paths(self, start, end, path=None, distance=0):
         """

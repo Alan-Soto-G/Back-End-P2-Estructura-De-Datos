@@ -1,35 +1,14 @@
-[
-    {
-        "id": 1,
-        "name": "Alan Soto",
-        "username": "alansoto",
-        "password": "password123",
-        "birth_date": "2006-04-16",
-        "avatar": "https://unavatar.io/dev_raxxor",
-        "registration_date": "2025-04-27",
-        "biography": "Desarrollador web y entusiasta de la tecnología.",
-        "experience": "Experto"
-    },
-    {
-        "id": 2,
-        "name": "Ana Martínez",
-        "username": "anamartinez",
-        "password": "securepass456",
-        "birth_date": "1995-11-22",
-        "avatar": "https://example.com/avatar2.jpg",
-        "registration_date": "2022-07-05",
-        "biography": "Diseñadora gráfica con un amor por el arte y la creatividad.",
-        "experience": "Principiante"
-    },
-    {
-        "id": 3,
-        "name": "Carlos Rodríguez",
-        "username": "carlosrodriguez",
-        "password": "mypassword789",
-        "birth_date": "1990-03-03",
-        "avatar": "https://example.com/avatar3.jpg",
-        "registration_date": "2021-12-17",
-        "biography": "Fotógrafo profesional y amante de los viajes.",
-        "experience": "Intermedio"
+{
+    "users": {
+        "1": {
+            "name": "Alan Nayib Soto Guzman",
+            "username": "dev_raxxor",
+            "password": "afasfsaf",
+            "birth_date": null,
+            "avatar": null,
+            "registration_date": "2025/05/07",
+            "biography": "No bio yet.",
+            "experience": "Experto"
+        }
     }
-]
+}
