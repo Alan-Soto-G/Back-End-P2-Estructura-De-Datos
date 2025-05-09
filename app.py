@@ -78,6 +78,14 @@ def create_routes():
         return jsonify({'success': "Ruta creada con éxito"}), 200
     else:
         return jsonify({'error': 'No se pudo crear la ruta'}), 400
+
+@app.route('/get-user-routes', methods=['POST'])
+def get_user_routes():
+    data = request.get_json()
+    if not data or "user_id" not in data:
+        return jsonify({'error': 'No se recibió JSON válido con "user_id"'}), 400
+    routes = management.get_user_routes(data["user_id"])
+    return jsonify({"routes": routes}), 200
     
 if __name__ == '__main__':
     app.run(debug=True)
