@@ -146,6 +146,145 @@
                     "7": 1100
                 },
                 "method": "min_distances_from"
+            },
+            {
+                "route_id": 5,
+                "name": "Ruta generada",
+                "popularity": 4,
+                "difficulty": 2.1666666666666665,
+                "points": [
+                    3,
+                    4,
+                    1,
+                    7,
+                    5,
+                    6
+                ],
+                "distance_meters": 2100,
+                "duration_minutes": 8.4,
+                "method": "route_according_to_experience"
+            },
+            {
+                "route_id": 6,
+                "name": "Ruta generada",
+                "popularity": 1,
+                "difficulty": 2.1666666666666665,
+                "points": [
+                    3,
+                    4,
+                    1,
+                    7,
+                    5,
+                    6
+                ],
+                "distance_meters": 2585,
+                "duration_minutes": 10.34,
+                "method": "safest_route"
+            },
+            {
+                "route_id": 7,
+                "name": "Ruta generada",
+                "popularity": 1,
+                "difficulty": 2.1666666666666665,
+                "points": [
+                    3,
+                    4,
+                    1,
+                    7,
+                    5,
+                    6
+                ],
+                "distance_meters": 1500,
+                "duration_minutes": 6.0,
+                "method": "route_according_to_distance_and_difficulty"
+            },
+            {
+                "route_id": 8,
+                "name": "Ruta generada",
+                "popularity": 1,
+                "difficulty": 1500,
+                "points": [
+                    3,
+                    4,
+                    1,
+                    7,
+                    5,
+                    6
+                ],
+                "distance_meters": 2.1666666666666665,
+                "duration_minutes": 0.008666666666666666,
+                "method": "proposed_routes"
+            },
+            {
+                "route_id": 9,
+                "name": "Ruta generada",
+                "popularity": 1,
+                "difficulty": 1985,
+                "points": [
+                    3,
+                    4,
+                    1,
+                    7,
+                    5,
+                    6
+                ],
+                "distance_meters": 2.1666666666666665,
+                "duration_minutes": 0.008666666666666666,
+                "method": "proposed_routes"
+            },
+            {
+                "route_id": 10,
+                "name": "Ruta generada",
+                "popularity": 4,
+                "difficulty": 2100,
+                "points": [
+                    3,
+                    4,
+                    1,
+                    7,
+                    5,
+                    6
+                ],
+                "distance_meters": 2.1666666666666665,
+                "duration_minutes": 0.008666666666666666,
+                "method": "proposed_routes"
+            },
+            {
+                "route_id": 11,
+                "name": "Ruta generada",
+                "popularity": 4,
+                "difficulty": 2585,
+                "points": [
+                    3,
+                    4,
+                    1,
+                    7,
+                    5,
+                    6
+                ],
+                "distance_meters": 2.1666666666666665,
+                "duration_minutes": 0.008666666666666666,
+                "method": "proposed_routes"
+            },
+            {
+                "route_id": 12,
+                "name": "Ruta generada",
+                "popularity": 2,
+                "difficulty": null,
+                "points": null,
+                "distance_meters": null,
+                "duration_minutes": null,
+                "min_distances": {
+                    "0": 1885,
+                    "1": 685,
+                    "2": 1435,
+                    "3": 0,
+                    "4": 85,
+                    "5": 1500,
+                    "6": 1500,
+                    "7": 1300
+                },
+                "method": "min_distances_from"
             }
         ]
     }

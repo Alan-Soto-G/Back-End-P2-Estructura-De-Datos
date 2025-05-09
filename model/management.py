@@ -226,3 +226,15 @@ def get_user (user_id):
             "experience": user_data["experience"]
         }
     return None
+
+def get_user_routes(user_id):
+    """
+    Retorna todas las rutas del usuario a partir de su id.
+    """
+    user_id_str = str(user_id)
+    try:
+        with open("database/user_routes.json", "r") as file:
+            data = json.load(file)
+    except FileNotFoundError:
+        return []
+    return data.get("users", {}).get(user_id_str, [])
