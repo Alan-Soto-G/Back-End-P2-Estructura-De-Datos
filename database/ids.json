@@ -3,7 +3,7 @@
     "init_point_id": 7,
     "users": {
         "1": {
-            "next_route_id": 10
+            "next_route_id": 25
         },
         "2": {
             "next_route_id": 5,

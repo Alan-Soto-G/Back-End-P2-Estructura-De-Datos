@@ -238,3 +238,56 @@ def get_user_routes(user_id):
     except FileNotFoundError:
         return []
     return data.get("users", {}).get(user_id_str, [])
+
+def delete_routes_due_to_node(user_id, point_id):
+    """
+    Elimina de database/user_routes.json todas las rutas que contengan el punto indicado.
+    """
+    user_id_str = str(user_id)
+    try:
+        with open("database/user_routes.json", "r") as file:
+            routes_data = json.load(file)
+    except FileNotFoundError:
+        return
+    user_routes = routes_data.get("users", {}).get(user_id_str, [])
+    # Filtrar las rutas que no usan el nodo
+    new_routes = [route for route in user_routes if not (route.get("points") and point_id in route["points"])]
+    routes_data["users"][user_id_str] = new_routes
+    with open("database/user_routes.json", "w") as file:
+        json.dump(routes_data, file, indent=4)
+
+def delete_node(user_id, point_id):
+    """
+    Borra un nodo (punto) del mapa del usuario, eliminando también las conexiones
+    (aristas) que lo involucren y todas las rutas que lo usan.
+    """
+    user_id_str = str(user_id)
+    try:
+        with open("database/user_map.json", "r") as file:
+            map_data = json.load(file)
+    except FileNotFoundError:
+        return False
+
+    if user_id_str not in map_data.get("users", {}):
+        return False
+
+    user_map = map_data["users"][user_id_str]
+
+    # Eliminar el punto de la lista de points
+    user_map["points"] = [p for p in user_map["points"] if p["id"] != point_id]
+
+    # Eliminar las aristas donde se involucre el punto
+    user_map["edges"] = [
+        edge for edge in user_map["edges"]
+        if edge.get("from") != point_id and edge.get("to") != point_id
+    ]
+
+    # Guardar el mapa actualizado
+    with open("database/user_map.json", "w") as file:
+        json.dump(map_data, file, indent=4)
+
+    # Eliminar de rutas todas aquellas que usen el punto
+    delete_routes_due_to_node(user_id, point_id)
+
+    return True
+

@@ -2,58 +2,6 @@
     "users": {
         "1": [
             {
-                "route_id": 5,
-                "name": "Ruta generada",
-                "popularity": 1,
-                "difficulty": 2.5,
-                "points": [
-                    1,
-                    2
-                ],
-                "distance_meters": 750,
-                "duration_minutes": 3.0,
-                "method": "route_according_to_experience"
-            },
-            {
-                "route_id": 6,
-                "name": "Ruta generada",
-                "popularity": 3,
-                "difficulty": 2.5,
-                "points": [
-                    1,
-                    2
-                ],
-                "distance_meters": 750,
-                "duration_minutes": 3.0,
-                "method": "safest_route"
-            },
-            {
-                "route_id": 7,
-                "name": "Ruta generada",
-                "popularity": 3,
-                "difficulty": 2.5,
-                "points": [
-                    1,
-                    2
-                ],
-                "distance_meters": 750,
-                "duration_minutes": 3.0,
-                "method": "route_according_to_distance_and_difficulty"
-            },
-            {
-                "route_id": 8,
-                "name": "Ruta generada",
-                "popularity": 1,
-                "difficulty": 750,
-                "points": [
-                    1,
-                    2
-                ],
-                "distance_meters": 2.5,
-                "duration_minutes": 0.01,
-                "method": "proposed_routes"
-            },
-            {
                 "route_id": 9,
                 "name": "Ruta generada",
                 "popularity": 3,
@@ -70,6 +18,182 @@
                     "5": 1300,
                     "6": 1300,
                     "7": 1100
+                },
+                "method": "min_distances_from"
+            },
+            {
+                "route_id": 10,
+                "name": "Ruta generada",
+                "popularity": 4,
+                "difficulty": 2.3333333333333335,
+                "points": [
+                    0,
+                    1,
+                    7
+                ],
+                "distance_meters": 2900,
+                "duration_minutes": 11.6,
+                "method": "route_according_to_experience"
+            },
+            {
+                "route_id": 11,
+                "name": "Ruta generada",
+                "popularity": 2,
+                "difficulty": 2.3333333333333335,
+                "points": [
+                    0,
+                    1,
+                    7
+                ],
+                "distance_meters": 2900,
+                "duration_minutes": 11.6,
+                "method": "safest_route"
+            },
+            {
+                "route_id": 12,
+                "name": "Ruta generada",
+                "popularity": 1,
+                "difficulty": 2.3333333333333335,
+                "points": [
+                    0,
+                    1,
+                    7
+                ],
+                "distance_meters": 2900,
+                "duration_minutes": 11.6,
+                "method": "route_according_to_distance_and_difficulty"
+            },
+            {
+                "route_id": 13,
+                "name": "Ruta generada",
+                "popularity": 3,
+                "difficulty": 2900,
+                "points": [
+                    0,
+                    1,
+                    7
+                ],
+                "distance_meters": 2.3333333333333335,
+                "duration_minutes": 0.009333333333333334,
+                "method": "proposed_routes"
+            },
+            {
+                "route_id": 14,
+                "name": "Ruta generada",
+                "popularity": 5,
+                "difficulty": null,
+                "points": null,
+                "distance_meters": null,
+                "duration_minutes": null,
+                "min_distances": {
+                    "0": 0,
+                    "1": 1800,
+                    "2": 2550,
+                    "3": 3400,
+                    "4": 2400,
+                    "5": 3100,
+                    "6": 3100,
+                    "7": 2900
+                },
+                "method": "min_distances_from"
+            },
+            {
+                "route_id": 19,
+                "name": "Ruta generada",
+                "popularity": 2,
+                "difficulty": null,
+                "points": null,
+                "distance_meters": null,
+                "duration_minutes": null,
+                "min_distances": {
+                    "0": 1420,
+                    "1": 220,
+                    "2": 0,
+                    "3": 1820,
+                    "4": 820,
+                    "5": 1520,
+                    "6": 1520,
+                    "7": 1320
+                },
+                "method": "min_distances_from"
+            },
+            {
+                "route_id": 20,
+                "name": "Ruta generada",
+                "popularity": 1,
+                "difficulty": 2.25,
+                "points": [
+                    0,
+                    1,
+                    7,
+                    3
+                ],
+                "distance_meters": 3400,
+                "duration_minutes": 13.6,
+                "method": "route_according_to_experience"
+            },
+            {
+                "route_id": 21,
+                "name": "Ruta generada",
+                "popularity": 2,
+                "difficulty": 2.25,
+                "points": [
+                    0,
+                    1,
+                    7,
+                    3
+                ],
+                "distance_meters": 3400,
+                "duration_minutes": 13.6,
+                "method": "safest_route"
+            },
+            {
+                "route_id": 22,
+                "name": "Ruta generada",
+                "popularity": 5,
+                "difficulty": 2.25,
+                "points": [
+                    0,
+                    1,
+                    7,
+                    3
+                ],
+                "distance_meters": 3400,
+                "duration_minutes": 13.6,
+                "method": "route_according_to_distance_and_difficulty"
+            },
+            {
+                "route_id": 23,
+                "name": "Ruta generada",
+                "popularity": 3,
+                "difficulty": 3400,
+                "points": [
+                    0,
+                    1,
+                    7,
+                    3
+                ],
+                "distance_meters": 2.25,
+                "duration_minutes": 0.009,
+                "method": "proposed_routes"
+            },
+            {
+                "route_id": 24,
+                "name": "Ruta generada",
+                "popularity": 4,
+                "difficulty": null,
+                "points": null,
+                "distance_meters": null,
+                "duration_minutes": null,
+                "min_distances": {
+                    "0": 0,
+                    "1": 1800,
+                    "2": 2550,
+                    "3": 3400,
+                    "4": 2400,
+                    "5": 3100,
+                    "6": 3100,
+                    "7": 2900
                 },
                 "method": "min_distances_from"
             }
