@@ -86,6 +86,17 @@ def get_user_routes():
         return jsonify({'error': 'No se recibió JSON válido con "user_id"'}), 400
     routes = management.get_user_routes(data["user_id"])
     return jsonify({"routes": routes}), 200
+
+@app.route('/delete-node', methods=['POST'])
+def delete_node_route():
+    data = request.get_json()
+    if not data or "user_id" not in data or "point_id" not in data:
+        return jsonify({'error': 'Se requiere user_id y point_id'}), 400
+    result = management.delete_node(data["user_id"], data["point_id"])
+    if result:
+        return jsonify({'success': 'Nodo y rutas asociadas eliminados'}), 200
+    else:
+        return jsonify({'error': 'No se pudo eliminar el nodo'}), 400
     
 if __name__ == '__main__':
     app.run(debug=True)
