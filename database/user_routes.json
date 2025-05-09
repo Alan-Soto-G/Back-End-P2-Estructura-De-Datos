@@ -73,6 +73,80 @@
                 },
                 "method": "min_distances_from"
             }
+        ],
+        "2": [
+            {
+                "route_id": 0,
+                "name": "Ruta generada",
+                "popularity": 2,
+                "difficulty": 2.5,
+                "points": [
+                    1,
+                    4
+                ],
+                "distance_meters": 600,
+                "duration_minutes": 2.4,
+                "method": "route_according_to_experience"
+            },
+            {
+                "route_id": 1,
+                "name": "Ruta generada",
+                "popularity": 4,
+                "difficulty": 2.5,
+                "points": [
+                    1,
+                    4
+                ],
+                "distance_meters": 600,
+                "duration_minutes": 2.4,
+                "method": "safest_route"
+            },
+            {
+                "route_id": 2,
+                "name": "Ruta generada",
+                "popularity": 2,
+                "difficulty": 2.5,
+                "points": [
+                    1,
+                    4
+                ],
+                "distance_meters": 600,
+                "duration_minutes": 2.4,
+                "method": "route_according_to_distance_and_difficulty"
+            },
+            {
+                "route_id": 3,
+                "name": "Ruta generada",
+                "popularity": 4,
+                "difficulty": 600,
+                "points": [
+                    1,
+                    4
+                ],
+                "distance_meters": 2.5,
+                "duration_minutes": 0.01,
+                "method": "proposed_routes"
+            },
+            {
+                "route_id": 4,
+                "name": "Ruta generada",
+                "popularity": 1,
+                "difficulty": null,
+                "points": null,
+                "distance_meters": null,
+                "duration_minutes": null,
+                "min_distances": {
+                    "0": 1200,
+                    "1": 0,
+                    "2": 750,
+                    "3": 1600,
+                    "4": 600,
+                    "5": 1300,
+                    "6": 1300,
+                    "7": 1100
+                },
+                "method": "min_distances_from"
+            }
         ]
     }
 }

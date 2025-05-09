@@ -6,7 +6,7 @@
             "next_route_id": 10
         },
         "2": {
-            "next_route_id": 0,
+            "next_route_id": 5,
             "next_point_id": 7
         }
     }
