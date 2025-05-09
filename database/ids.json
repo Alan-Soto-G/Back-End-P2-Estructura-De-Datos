@@ -1,8 +1,12 @@
 {
-    "next_user_id": 2,
+    "next_user_id": 3,
     "init_point_id": 7,
     "users": {
         "1": {
+            "next_route_id": 0,
+            "next_point_id": 7
+        },
+        "2": {
             "next_route_id": 0,
             "next_point_id": 7
         }

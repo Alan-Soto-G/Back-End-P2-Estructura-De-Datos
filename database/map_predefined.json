@@ -9,13 +9,13 @@
         {
             "id": 1,
             "name": "Glorieta San Rafael",
-            "description": "Mucho tráfico de carros",
+            "description": "Mucho trafico de carros",
             "risk_level": 3
         },
         {
             "id": 2,
             "name": "Terpel Av. Kevin Angel",
-            "description": "Zona de tráfico moderado",
+            "description": "Zona de trafico moderado",
             "risk_level": 2
         },
         {
@@ -27,7 +27,7 @@
         {
             "id": 4,
             "name": "CAI Avenida Santander",
-            "description": "Zona de tráfico moderado",
+            "description": "Zona de trafico moderado",
             "risk_level": 2
         },
         {
@@ -45,7 +45,7 @@
         {
             "id": 7,
             "name": "Glorieta La Gotera",
-            "description": "Zona de mucho tráfico",
+            "description": "Zona de mucho trafico",
             "risk_level": 3
         }
     ],

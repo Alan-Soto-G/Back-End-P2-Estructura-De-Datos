@@ -11,13 +11,13 @@
                 {
                     "id": 1,
                     "name": "Glorieta San Rafael",
-                    "description": "Mucho tr\u00c3\u00a1fico de carros",
+                    "description": "Mucho trafico de carros",
                     "risk_level": 3
                 },
                 {
                     "id": 2,
                     "name": "Terpel Av. Kevin Angel",
-                    "description": "Zona de tr\u00c3\u00a1fico moderado",
+                    "description": "Zona de trafico moderado",
                     "risk_level": 2
                 },
                 {
@@ -29,7 +29,7 @@
                 {
                     "id": 4,
                     "name": "CAI Avenida Santander",
-                    "description": "Zona de tr\u00c3\u00a1fico moderado",
+                    "description": "Zona de trafico moderado",
                     "risk_level": 2
                 },
                 {
@@ -47,7 +47,145 @@
                 {
                     "id": 7,
                     "name": "Glorieta La Gotera",
-                    "description": "Zona de mucho tr\u00c3\u00a1fico",
+                    "description": "Zona de mucho trafico",
+                    "risk_level": 3
+                }
+            ],
+            "edges": [
+                {
+                    "from": 0,
+                    "to": 1,
+                    "distance_meters": 1800,
+                    "directed": true
+                },
+                {
+                    "from": 1,
+                    "to": 2,
+                    "distance_meters": 750,
+                    "directed": true
+                },
+                {
+                    "from": 2,
+                    "to": 1,
+                    "distance_meters": 220,
+                    "directed": true
+                },
+                {
+                    "from": 3,
+                    "to": 4,
+                    "distance_meters": 85,
+                    "directed": true
+                },
+                {
+                    "from": 4,
+                    "to": 1,
+                    "distance_meters": 600,
+                    "directed": false
+                },
+                {
+                    "from": 1,
+                    "to": 0,
+                    "distance_meters": 1200,
+                    "directed": true
+                },
+                {
+                    "from": 1,
+                    "to": 7,
+                    "distance_meters": 1100,
+                    "directed": false
+                },
+                {
+                    "from": 7,
+                    "to": 5,
+                    "distance_meters": 200,
+                    "directed": true
+                },
+                {
+                    "from": 5,
+                    "to": 7,
+                    "distance_meters": 600,
+                    "directed": true
+                },
+                {
+                    "from": 7,
+                    "to": 3,
+                    "distance_meters": 500,
+                    "directed": true
+                },
+                {
+                    "from": 3,
+                    "to": 7,
+                    "distance_meters": 1300,
+                    "directed": true
+                },
+                {
+                    "from": 7,
+                    "to": 6,
+                    "distance_meters": 200,
+                    "directed": true
+                },
+                {
+                    "from": 6,
+                    "to": 7,
+                    "distance_meters": 270,
+                    "directed": true
+                },
+                {
+                    "from": 5,
+                    "to": 6,
+                    "distance_meters": 600,
+                    "directed": true
+                }
+            ]
+        },
+        "2": {
+            "points": [
+                {
+                    "id": 0,
+                    "name": "CAI La Sultana",
+                    "description": "Zona verde y segura",
+                    "risk_level": 1
+                },
+                {
+                    "id": 1,
+                    "name": "Glorieta San Rafael",
+                    "description": "Mucho trafico de carros",
+                    "risk_level": 3
+                },
+                {
+                    "id": 2,
+                    "name": "Terpel Av. Kevin Angel",
+                    "description": "Zona de trafico moderado",
+                    "risk_level": 2
+                },
+                {
+                    "id": 3,
+                    "name": "C.C Cable Plaza",
+                    "description": "Centro comercial con seguridad",
+                    "risk_level": 2
+                },
+                {
+                    "id": 4,
+                    "name": "CAI Avenida Santander",
+                    "description": "Zona de trafico moderado",
+                    "risk_level": 2
+                },
+                {
+                    "id": 5,
+                    "name": "Estadio Palo Grande",
+                    "description": "Zona de eventos deportivos",
+                    "risk_level": 2
+                },
+                {
+                    "id": 6,
+                    "name": "Universidad de Caldas - Campus Central",
+                    "description": "Zona universitaria",
+                    "risk_level": 1
+                },
+                {
+                    "id": 7,
+                    "name": "Glorieta La Gotera",
+                    "description": "Zona de mucho trafico",
                     "risk_level": 3
                 }
             ],

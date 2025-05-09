@@ -34,5 +34,17 @@ def login():
         }
     ), 200
 
+@app.route('/user-map', methods=['POST'])
+def get_user_map():
+    data = request.get_json()
+    if not data or "user_id" not in data:
+        return jsonify({'error': 'No se recibió JSON válido con "user_id"'}), 400
+
+    result = management.get_user_map(data["user_id"])
+    if result is None:
+        return jsonify({'error': 'Usuario no encontrado'}), 404
+
+    return jsonify(result), 200
+    
 if __name__ == '__main__':
     app.run(debug=True)

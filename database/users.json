@@ -3,10 +3,20 @@
         "1": {
             "name": "Alan Nayib Soto Guzman",
             "username": "dev_raxxor",
-            "password": "afasfsaf",
+            "password": "12345678",
             "birth_date": null,
             "avatar": null,
             "registration_date": "2025/05/07",
+            "biography": "No bio yet.",
+            "experience": "Experto"
+        },
+        "2": {
+            "name": "Laura Cardona",
+            "username": "laura_cardonna",
+            "password": "123456789",
+            "birth_date": null,
+            "avatar": null,
+            "registration_date": "2025/05/08",
             "biography": "No bio yet.",
             "experience": "Experto"
         }
