@@ -1,9 +1,11 @@
 from flask import Flask, request, jsonify
 from flask_cors import CORS
 from model import management
+import create_route
 
 app = Flask(__name__)
 CORS(app)
+
 
 @app.route('/new-user', methods=['POST'])
 def sign_in():
@@ -14,7 +16,6 @@ def sign_in():
 
 @app.route('/login-user', methods=['POST'])
 def login():
-    print("Login")
     data = request.get_json()
     if not data:
         return jsonify({'error': 'No se recibió JSON'}), 400
@@ -45,6 +46,38 @@ def get_user_map():
         return jsonify({'error': 'Usuario no encontrado'}), 404
 
     return jsonify(result), 200
+
+@app.route('/get-user-data', methods=['POST'])
+def get_user():
+    data = request.get_json()
+    if not data or "user_id" not in data:
+        return jsonify({'error': 'No se recibió JSON'}),400
+    
+    user = management.get_user(data["user_id"])
+    if user is None:
+        return jsonify({'error': 'Usuario no encontrado'}),404
+    
+    return jsonify(user),200
+
+@app.route('/submit-route', methods=['POST'])
+def create_routes():
+    data = request.get_json()
+    if not data:
+        return jsonify({'error': 'No se recibió JSON'}), 400
+
+    result = create_route.create(
+        data["user_id"], 
+        data["start"],  
+        data["end"],    
+        data["experience"], 
+        data["risk_level"], 
+        data["user_distance"]
+    )
+
+    if result:
+        return jsonify({'success': "Ruta creada con éxito"}), 200
+    else:
+        return jsonify({'error': 'No se pudo crear la ruta'}), 400
     
 if __name__ == '__main__':
     app.run(debug=True)

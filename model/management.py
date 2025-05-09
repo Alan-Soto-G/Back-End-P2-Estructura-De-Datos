@@ -202,3 +202,27 @@ def get_user_map (user_id):
             "edges": user_data["edges"]
         }
     return None
+
+def get_user (user_id):
+    """
+    Get the user's data.
+    """
+    user_id_str = str(user_id)
+
+    with open(PATH_USERS, "r") as file:
+        data = json.load(file)
+
+    user_data = data["users"].get(user_id_str, None)
+
+    if user_data:
+        return {
+            "name": user_data["name"],
+            "username": user_data["username"],
+            "password": user_data["password"],
+            "birth_date": user_data["birth_date"],
+            "avatar": user_data["avatar"],
+            "registration_date": user_data["registration_date"],
+            "biography": user_data["biography"],
+            "experience": user_data["experience"]
+        }
+    return None
